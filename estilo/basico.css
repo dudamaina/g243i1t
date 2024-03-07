@@ -1,6 +1,12 @@
 .botao{
-    background-color: rgb(138, 43, 226);
+    margin-top: 20%;
+    background-color: rgb(125, 70, 177);
     color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 40px;
+}
+.conteudo{
     text-align: center;
 }
 body {
@@ -10,5 +16,57 @@ body {
     width: 100%;
     height: 70px;
     text-align: center;
-    background-color: brown;
+    background-color: rgb(94, 116, 214);
+}
+.desktop {
+    display: none;
+}
+.tablet {
+    display: none;
+}
+.mobile {
+    font-size: 50px;
+    color: rgb(23, 23, 126);
+}
+
+@media (min-width:800px) {
+    .barra{
+        background-color: rgb(245, 88, 88);
+        height: 80px;
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet {
+        font-size: 55px;
+        display: inline;
+        color: rgb(104, 58, 148);
+    }
+    .botao{
+        margin-top: 0%;
+        width: 80%;
+        font-size: 16px;
+    }
+    .conteudo{
+        text-align: right;
+    }
+}
+    
+@media (min-width:1228px) {
+    .barra{
+        background-color: rgb(69, 212, 164);
+        height: 120px;
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        font-size: 70px;
+        display: inline;
+        color: rgb(58, 59, 148);
+    }
+    .conteudo{
+        text-align: left;
+    }
+
 }
